@@ -5,7 +5,7 @@ use Illuminate\Support\Str;
 
 use App\Library\Services\Contracts\UploadImageServiceInterface;
 
-class UploadimageService implements UploadimageServiceInterface {
+class UploadImageService implements UploadimageServiceInterface {
 
     public function uploadImage($request,$data,$type)
     {

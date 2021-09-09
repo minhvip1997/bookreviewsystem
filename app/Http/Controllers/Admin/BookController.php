@@ -26,9 +26,9 @@ class BookController extends Controller
 
     protected $uploadImageService;
 
-    public function __construct(UploadImageServiceInterface $uploadImageServiceInterface)
+    public function __construct(UploadimageServiceInterface $uploadimageServiceInterface)
     {
-        $this->uploadImageService = $uploadImageServiceInterface;
+        $this->uploadImageService = $uploadimageServiceInterface;
     }
 
 
