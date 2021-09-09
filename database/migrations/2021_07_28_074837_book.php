@@ -22,7 +22,7 @@ class Book extends Migration
             $table->integer('num_of_page');
             $table->integer('rate')->nullable();
             $table->integer('quantity');
-            $table->integer('status');
+            $table->integer('status')->nullable();
             $table->integer('price');
         });
     }
