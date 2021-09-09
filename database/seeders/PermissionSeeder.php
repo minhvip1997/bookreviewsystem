@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 
-class Permission extends Seeder
+class PermissionSeeder extends Seeder
 {
     /**
      * Run the database seeds.
