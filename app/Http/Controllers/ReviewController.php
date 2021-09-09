@@ -206,7 +206,7 @@ class ReviewController extends Controller
     private function updateRate($bookid){
         $book = Book::find($bookid);
         $bookreviews = $book->reviews()->avg('rate');
-        $book->rate = $bookreviews;
+        $book->rate = (int) $bookreviews;
         $book->update();
     }
 
