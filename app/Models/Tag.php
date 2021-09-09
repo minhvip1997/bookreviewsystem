@@ -33,7 +33,7 @@ class Tag extends Model
 
     public function scopeHotTag($query){
         return $query->join('taggable_taggables','taggable_taggables.tag_id','=','taggable_tags.tag_id')
-        ->groupBy('taggable_tags.tag_id')
+        ->groupBy('taggable_taggables.tag_id')
         ->orderBy(\DB::raw('count(taggable_taggables.tag_id)'), 'DESC')
         ->select('taggable_taggables.tag_id','taggable_tags.name');
     }
