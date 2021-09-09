@@ -24,7 +24,7 @@ class TagService implements TagServiceInterface
             $weekStartDate = $now->startOfWeek()->format('Y-m-d H:i');
             $weekEndDate = $now->endOfWeek()->format('Y-m-d H:i');
             $hottag = Tag::join('taggable_taggables','taggable_taggables.tag_id','=','taggable_tags.tag_id')
-            ->groupBy('taggable_taggables.tag_id')
+            ->groupBy('taggable_taggables.tag_id','taggable_tags.name')
             ->orderBy(\DB::raw('count(taggable_taggables.tag_id)'), 'DESC')
             ->select('taggable_taggables.tag_id','taggable_tags.name')
             ->whereBetween('taggable_taggables.updated_at',[$weekStartDate,$weekEndDate])
@@ -34,7 +34,7 @@ class TagService implements TagServiceInterface
             $weekStartDate = $now->firstOfMonth()->format('Y-m-d H:i');
             $weekEndDate = $now->endOfMonth()->format('Y-m-d H:i');
             $hottag = Tag::join('taggable_taggables','taggable_taggables.tag_id','=','taggable_tags.tag_id')
-            ->groupBy('taggable_taggables.tag_id')
+            ->groupBy('taggable_taggables.tag_id','taggable_tags.name')
             ->orderBy(\DB::raw('count(taggable_taggables.tag_id)'), 'DESC')
             ->select('taggable_taggables.tag_id','taggable_tags.name')
             ->whereBetween('taggable_taggables.updated_at',[$weekStartDate,$weekEndDate])

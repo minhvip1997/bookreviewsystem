@@ -20,4 +20,5 @@
 <link rel="stylesheet" href="{{ secure_asset('admin/css/select2.min.css') }}"/>
 <link rel="stylesheet" href="{{ secure_asset('admin/css/jquery-confirm.min.css') }}">
 <link rel="stylesheet" href="{{ secure_asset('admin/css/custom.css') }}">
+<link rel="stylesheet" href="{{ secure_asset('admin/css/vertical-layout-light/style.css') }}">
 <script src="{{ secure_asset('admin/js/jquery.min.js') }}"></script>

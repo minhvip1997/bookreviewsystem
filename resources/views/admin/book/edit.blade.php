@@ -42,7 +42,7 @@
                   <label>{{__('message.Image')}}</label>
                   <input type="file" name="image" class="file-upload-default">
                   <div class="input-group col-xs-12">
-                     <input type="text" class="form-control file-upload-info" disabled placeholder="{{__('message.Upload')}}">
+                     <input type="text" class="form-control file-upload-info" disabled placeholder="{{__('message.Upload')}}" value="{{$book->image}}">
                      <span class="input-group-append">
                      <button class="file-upload-browse btn btn-primary" type="button">{{__('message.Upload')}}</button>
                      </span>

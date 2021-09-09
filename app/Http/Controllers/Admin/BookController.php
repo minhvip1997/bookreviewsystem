@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\Book;
 use App\Models\Role;
 use App\Models\User;
-use App\Models\Book_category;
+use App\Models\Book_Category;
 use App\Models\Category;
 use Illuminate\Support\Str;
 use App\Tag;
