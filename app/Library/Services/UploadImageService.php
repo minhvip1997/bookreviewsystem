@@ -3,7 +3,7 @@
 namespace App\Library\Services;
 use Illuminate\Support\Str;
 
-use App\Library\Services\Contracts\UploadImageServiceInterface;
+use App\Library\Services\Contracts\UploadimageServiceInterface;
 
 class UploadImageService implements UploadimageServiceInterface {
 
