@@ -18,7 +18,7 @@ class CreateUserGroupTable extends Migration
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('group_id');
             $table->foreign('user_id')->references('id')->on('users');
-            $table->foreign('groud_id')->references('id')->on('groups');
+            $table->foreign('group_id')->references('id')->on('groups');
         
         });
     }
