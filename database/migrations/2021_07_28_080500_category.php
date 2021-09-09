@@ -17,7 +17,7 @@ class Category extends Migration
             $table->id();
             $table->string('title')->unique();
             $table->longText('description');
-            $table->bigIncrements('parent_id');
+            $table->unsignedBigInteger('parent_id')->default(0);
         });
     }
 
