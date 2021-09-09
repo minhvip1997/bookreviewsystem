@@ -2,7 +2,7 @@
     <?php
         $dates=[];
         $data=[];
-        $lastday=cal_days_in_month(CAL_GREGORIAN,date('m'),date('Y'));
+        $lastday=days_in_month(date('m'),date('Y'));
         date_default_timezone_set('UTC');
         // Start date
         $date = date('Y').'-'.date('m').'-01';
@@ -20,6 +20,11 @@
             else $datas[]=0;
             $date = date("Y-m-d", strtotime("+1 day", strtotime($date)));
         }
+
+        function days_in_month($month, $year){
+            // calculate number of days in a month
+            return $month == 2 ? ($year % 4 ? 28 : ($year % 100 ? 29 : ($year % 400 ? 28 : 29))) : (($month - 1) % 7 % 2 ? 30 : 31);
+        } 
     ?>
     $(document).ready(function(){
         var orders = <?php echo json_encode($data)?>;
