@@ -34,7 +34,7 @@
                 <td>{{ $cart->total_price?$cart->total_price:0 }}</td>
                 <td>{{ $cart->created_at }}</td>
                 <td class="display-flex">
-                  <a href="{{url('admin/cart/'.$cart->id.'/edit')}}">
+                  <a href="{{url('admin/cartadmin/'.$cart->id.'/edit')}}">
                     <label class="badge badge-info">{{__('message.Detail')}}</label>
                   </a>
                   <a class="confirm" item-id="{{ $cart->id }}" item-type="cart" lang="{{ session('language') }}">

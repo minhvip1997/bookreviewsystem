@@ -94,7 +94,7 @@
         <div class="col">
           <div id="bloodhound">
             @if ($data["cart"]->status == "pending")
-            <form action="{{ url('admin/cart/'.$data["cart"]->id) }}" method="post">
+            <form action="{{ url('admin/cartadmin/'.$data["cart"]->id) }}" method="post">
               @csrf
               @method('PUT')
               <input type="hidden" name="status" value="done">

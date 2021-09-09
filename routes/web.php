@@ -102,7 +102,7 @@ Route::group(['prefix'=>'admin','middleware' => ['admin']], function(){
     Route::resource('profileadmin',ProfileController2::class);
     Route::resource('managebook',ManagerBookController2::class);
     Route::post('search/user', [UserController2::class, 'search'])->name('admin.user.search');
-    Route::resource('cart',CartController2::class);
+    Route::resource('cartadmin',CartController2::class);
     Route::get('cart/type/{type}',[CartController2::class,'cartType'])->name('admin.cart.type');
     Route::get('buybook',[UserController2::class,'buybook']);
     Route::get('logout', [LoginController2::class, 'logout'])->name('admin.logout');
