@@ -15,7 +15,7 @@
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
               <p class="mb-0 font-weight-normal float-left dropdown-header">{{__('message.Notifications')}}</p>
-              @forelse ($user->notifications as $notification)
+              @forelse ($user->notifications->take(10) as $notification)
               <a class="dropdown-item preview-item">
                 <div class="preview-thumbnail">
                   <div class="preview-icon bg-success">

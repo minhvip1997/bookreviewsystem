@@ -20,7 +20,7 @@ class Review extends Migration
             $table->string('title');
             $table->longText('body');
             $table->integer('rate');
-            $table->integer('approve');
+            $table->integer('approve')->default(0);
             $table->timestamps();
 
             $table->foreign('book_id')->references('id')->on('book')->onDelete('cascade');
