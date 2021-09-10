@@ -33,5 +33,6 @@
    <link rel="stylesheet" href="{{ secure_asset('css/plugins.css') }}">
    <link rel="stylesheet" href="{{ secure_asset('css/style.css') }}">
    <link rel="stylesheet" href="{{ secure_asset('css/custom.css') }}">
+   <link rel="stylesheet" href="{{ secure_asset('css/fontawesome.min.css') }}">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </header>
