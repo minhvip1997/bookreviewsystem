@@ -18,6 +18,7 @@ class Comment extends Migration
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('review_id');
             $table->longText('body');
+            $table->integer('approve');
             $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
