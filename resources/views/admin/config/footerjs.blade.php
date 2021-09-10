@@ -18,7 +18,6 @@
 <script src="{{ secure_asset('admin/js/jquery-confirm.min.js') }}"></script>
 <script src="{{ secure_asset('admin/js/dashboard.js') }}"></script>
 <script src="{{ secure_asset('admin/js/file-upload.js') }}"></script>
-<script src="{{ secure_asset('admin/js/typeahead.js') }}"></script>
 <script src="{{ secure_asset('admin/js/select2.js') }}"></script>
 <script src="{{ secure_asset('admin/js/custom.js') }}"></script>
 <script src="{{ secure_asset('admin/js/cart.js') }}"></script>

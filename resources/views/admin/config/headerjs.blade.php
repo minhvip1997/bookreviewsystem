@@ -21,3 +21,4 @@
 <link rel="stylesheet" href="{{ secure_asset('admin/css/jquery-confirm.min.css') }}">
 <link rel="stylesheet" href="{{ secure_asset('admin/css/custom.css') }}">
 <script src="{{ secure_asset('admin/js/jquery.min.js') }}"></script>
+<script src="{{ secure_asset('admin/js/typeahead.js') }}"></script>

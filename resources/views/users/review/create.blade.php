@@ -5,7 +5,7 @@
 @include('users.title.body')
 <li><span class="ion-ios-arrow-right"></span> {{__('message.Create_Review')}}</li>
 @include('users.title.footer')
-<link rel="stylesheet" href="{{ secure_asset('css/fontawesome.min.css') }}">
+<link rel="stylesheet" href="{{ secure_asset('css/fonts/fontawesome.min.css') }}">
 <div class="page-single">
    <div class="container">
       <div class="row ipad-width">
